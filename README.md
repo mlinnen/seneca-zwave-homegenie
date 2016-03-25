@@ -14,49 +14,49 @@ Make sure you have enabled the HomeGenie REST API so that this module can talk t
 ## Examples
 Make sure you have already done the install steps to get the source and the dependencies installed on your system. 
 
-1. Change the _baseurl_ in zwave-control.js file to match your setup.
-2. Change the javascript files in the examples folder to use an id of a zwave device that you have
-3. Open up a command or shell prompt and navigate to the directory where you installed the source
-4. Run the following
-```sh
-node zwave-control-service.js
-```
-5. Open up a second command or shell prompt and navigate to the directory where you installed the source
-6. Run the following to turn on the zwave device
-```sh
-node examples\zwave-test-on.js
-```
-7. Run the following to turn off the zwave device
-```sh
-node examples\zwave-test-off.js
-```
+    1. Change the _baseurl_ in zwave-control.js file to match your setup.
+    2. Change the javascript files in the examples folder to use an id of a zwave device that you have
+    3. Open up a command or shell prompt and navigate to the directory where you installed the source
+    4. Run the following
+    ```sh
+    node zwave-control-service.js
+    ```
+    5. Open up a second command or shell prompt and navigate to the directory where you installed the source
+    6. Run the following to turn on the zwave device
+    ```sh
+    node examples\zwave-test-on.js
+    ```
+    7. Run the following to turn off the zwave device
+    ```sh
+    node examples\zwave-test-off.js
+    ```
  
 
 ## Actions
 
 ### ACTION: role:zwave, cmd:control_on
 Turn on a Z-Wave dimmer, lamp or applicance module using this action.
-* _id_: the z-wave id of the device you want the action to be applied to
+    * _id_: the z-wave id of the device you want the action to be applied to
 
 ### ACTION: role:zwave, cmd:control_off
 Turn off a Z-Wave dimmer, lamp or applicance module using this action.
-* _id_: the z-wave id of the device you want the action to be applied to
+    * _id_: the z-wave id of the device you want the action to be applied to
 
 ### ACTION: role:zwave, cmd:control_level
 Set the light level off a Z-Wave dimmer using this action.
-* _id_: the z-wave id of the device you want the action to be applied to
-* _level_: the light level (0-99)
+    * _id_: the z-wave id of the device you want the action to be applied to
+    * _level_: the light level (0-99)
 
 
 ## Roadmap
 These are a few items I think this module could use to make it more useful.  I don't have any plans on
 when the following will be done or in what order.
-* Convert this into a plugin
-* Make the _baseurl_ easier to set without modifying the module
-* Add support for events when a zwave device changes state either by this module or some other source
-* Add tests
-* Add support for more Z-Wave devices like a Multi Sensor or a Thermostat
-* Add more examples
-* Add a build process
-* Make this an NPM package
+    * Convert this into a plugin
+    * Make the _baseurl_ easier to set without modifying the module
+    * Add support for events when a zwave device changes state either by this module or some other source
+    * Add tests
+    * Add support for more Z-Wave devices like a Multi Sensor or a Thermostat
+    * Add more examples
+    * Add a build process
+    * Make this an NPM package
 
