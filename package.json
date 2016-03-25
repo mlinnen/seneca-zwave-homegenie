@@ -1,0 +1,11 @@
+{
+  "name": "seneca-zwave-homegenie",
+  "version": "0.0.1",
+  "description": "Exposes Home Genie's Zwave REST API as a Seneca Service",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-rest-client": "^1.8.0",
+    "seneca": "0.6.2"
+  }
+}
