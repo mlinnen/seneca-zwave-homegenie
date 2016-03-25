@@ -13,6 +13,7 @@ Make sure you have enabled the HomeGenie REST API so that this module can talk t
 
 ## Examples
 Make sure you have already done the install steps to get the source and the dependencies installed on your system. 
+
 1. Change the _baseurl_ in zwave-control.js file to match your setup.
 2. Change the javascript files in the examples folder to use an id of a zwave device that you have
 3. Open up a command or shell prompt and navigate to the directory where you installed the source
