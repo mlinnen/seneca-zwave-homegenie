@@ -1,11 +1,31 @@
 {
   "name": "seneca-zwave-homegenie",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Exposes Home Genie's Zwave REST API as a Seneca Service",
-  "author": "",
+  "author": {
+    "name": "Mike Linnen",
+    "email": "mlinnen@protosystem.net",
+    "url": "http://www.protosystem.net/"
+  },
+  "keywords": [
+    "seneca",
+    "zwave",
+    "HomeGenie"
+  ],
+  "main": "zwave-contorl.js",
   "license": "MIT",
+  "files": [
+    "LICENSE.txt",
+    "README.md",
+    "zwave-control.js",
+    "examples"
+  ],
   "dependencies": {
     "node-rest-client": "^1.8.0",
     "seneca": "0.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlinnen/seneca-zwave-homegenie.git"
   }
 }
