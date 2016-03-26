@@ -6,7 +6,7 @@ This service will respond to Seneca actions and turn them into HomeGenie API cal
 ## Install
 Since Seneca and this service are built on top of [Node.js](https://nodejs.org) you will need to have it installed.
 Clone this repository into a directory of your choice and run the following command:
-```sh
+```
 npm install
 ```
 Make sure you have enabled the HomeGenie REST API so that this module can talk to it.
@@ -19,22 +19,22 @@ Make sure you have already done the install steps to get the source and the depe
     3. Open up a command or shell prompt and navigate to the directory where you installed the source
     4. Run the following
 	
-    ```sh
-    node zwave-control-service.js
-    ```
+```
+node zwave-control-service.js
+```
 	
     5. Open up a second command or shell prompt and navigate to the directory where you installed the source
     6. Run the following to turn on the zwave device
 	
-    ```sh
-    node examples\zwave-test-on.js
-    ```
+```
+node examples\zwave-test-on.js
+```
 	
     7. Run the following to turn off the zwave device
 	
-    ```sh
-    node examples\zwave-test-off.js
-    ```
+```
+node examples\zwave-test-off.js
+```
  
 
 ## Actions
