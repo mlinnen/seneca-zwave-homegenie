@@ -14,17 +14,10 @@ Make sure you have enabled the HomeGenie REST API so that this module can talk t
 ## Examples
 Make sure you have already done the install steps to get the source and the dependencies installed on your system. 
 
-1. Change the _baseurl_ in zwave-control.js file to match your setup.
-2. Change the javascript files in the examples folder to use an id of a zwave device that you have
+1. Change the _baseurl_ in examples file to match your setup for where the HomeGenie REST API is installed.
+2. Change the id in example files to match what zwave device that you have
 3. Open up a command or shell prompt and navigate to the directory where you installed the source
 4. Run the following
- 
- ```
- node zwave-control-service.js
- ```
-
-5. Open up a second command or shell prompt and navigate to the directory where you installed the source
-6. Run the following to turn on the zwave device
 
  ```
  node examples\zwave-test-on.js
@@ -35,7 +28,7 @@ Make sure you have already done the install steps to get the source and the depe
  ```
  node examples\zwave-test-off.js
  ```
- 
+Your zwave device should tunr on and off. 
 
 ## Actions
 
