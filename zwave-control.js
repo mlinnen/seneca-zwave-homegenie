@@ -35,7 +35,7 @@ module.exports = function zwave(options) {
         });
     })
     return {
-        name: 'zwave-control'
+        name: 'seneca-zwave-homegenie'
     }
 }
 
