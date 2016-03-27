@@ -50,7 +50,7 @@ Set the light level off a Z-Wave dimmer using this action.
 These are a few items I think this module could use to make it more useful.  I don't have any plans on
 when the following will be done or in what order.
 - Convert this into a plugin
-- Make the _baseurl_ easier to set without modifying the module
+- ~~Make the _baseurl_ easier to set without modifying the module~~ This is an option now.
 - Add support for events when a zwave device changes state either by this module or some other source
 - Add tests
 - Add support for more Z-Wave devices like a Multi Sensor or a Thermostat
