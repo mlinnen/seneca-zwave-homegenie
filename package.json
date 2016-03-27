@@ -1,6 +1,6 @@
 {
   "name": "seneca-zwave-homegenie",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Exposes Home Genie's Zwave REST API as a Seneca Service",
   "author": {
     "name": "Mike Linnen",
