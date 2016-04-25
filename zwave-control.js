@@ -2,7 +2,7 @@ var Client = require('node-rest-client').Client;
 var client = new Client();
 
 module.exports = function zwave(options) {
-
+    var seneca = this;
     var role = options.role
 
     // Default options
@@ -11,19 +11,19 @@ module.exports = function zwave(options) {
     }, options)
 
     this.add({ role: role, cmd: 'control_on' }, function(msg, respond) {
-        console.log('Z-Wave Dimmer ' + msg.id + ' On')
+        seneca.log.info('Z-Wave Dimmer ' + msg.id + ' On')
         client.get(options.baseurl + '/api/HomeAutomation.ZWave/' + msg.id + '/Control.On', function(data, response) {
             respond(null, { answer: 'ok' })
         });
     })
     this.add({ role: role, cmd: 'control_off' }, function(msg, respond) {
-        console.log('Z-Wave Dimmer ' + msg.id + ' Off')
+        seneca.log.info('Z-Wave Dimmer ' + msg.id + ' Off')
         client.get(options.baseurl + '/api/HomeAutomation.ZWave/' + msg.id + '/Control.Off', function(data, response) {
             respond(null, { answer: 'ok' })
         });
     })
     this.add({ role: role, cmd: 'control_level' }, function(msg, respond) {
-        console.log('Z-Wave Dimmer ' + msg.id + ' Level ' + msg.level)
+        seneca.log.info('Z-Wave Dimmer ' + msg.id + ' Level ' + msg.level)
         client.get(options.baseurl + '/api/HomeAutomation.ZWave/' + msg.id + '/Control.Level/' + msg.level, function(data, response) {
             respond(null, { answer: 'ok' })
         });
