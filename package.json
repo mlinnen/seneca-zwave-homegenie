@@ -1,6 +1,6 @@
 {
     "name": "seneca-zwave-homegenie",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Exposes Home Genie's Zwave REST API as a Seneca Service",
     "main": "zwave-control.js",
     "scripts": {
